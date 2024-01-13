@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Conscientização Ambiental</title>
+</head>
+<body>
+
+    <header>
+        <h1>Bem-vindo à Plataforma de Conscientização Ambiental</h1>
+        <p>Uma iniciativa para combater a mudança climática na comunidade e promover práticas sustentáveis.</p>
+    </header>
+
+    <section id="mudanca-climatica">
+        <h2>Mudança Climática</h2>
+        <p>A mudança climática refere-se às alterações de longo prazo nos padrões de temperatura, vento e precipitação na Terra....</p>
+        <p>Explore nosso guia completo sobre <a href="#mudanca-climatica-detalhes">Mudança Climática</a>.</p>
+    </section>
+
+    <section id="dicas-sustentaveis">
+        <h2>Dicas Sustentáveis</h2>
+        <ul>
+            <li>Reduza o uso de plástico descartável.</li>
+            <li>Economize energia desligando dispositivos quando não estiverem em uso.</li>
+            <li>Opte por transporte público ou compartilhado.</li>
+            <li>Plante uma árvore para compensar sua pegada de carbono.</li>
+            <!-- Adicione mais dicas conforme necessário -->
+        </ul>
+        <p>Participe de nosso desafio de sustentabilidade e compartilhe suas ações <a href="#forum-comunitario">no fórum</a>.</p>
+    </section>
+
+    <section id="eventos-locais">
+        <h2>Eventos Locais</h2>
+        <form id="form-evento">
+            <label for="nome-evento">Nome do Evento:</label>
+            <input type="text" id="nome-evento" required>
+
+            <label for="descricao-evento">Descrição do Evento:</label>
+            <textarea id="descricao-evento" required></textarea>
+
+            <label for="data-evento">Data do Evento:</label>
+            <input type="date" id="data-evento" required>
+
+            <button type="button" onclick="adicionarEvento()">Adicionar Evento</button>
+        </form>
+        <ul id="lista-eventos"></ul>
+    </section>
+
+    <section id="forum-comunitario">
+        <h2>Fórum Comunitário</h2>
+        <form id="form-topico">
+            <label for="titulo-topico">Título do Tópico:</label>
+            <input type="text" id="titulo-topico" required>
+
+            <label for="mensagem-topico">Mensagem:</label>
+            <textarea id="mensagem-topico" required></textarea>
+
+            <button type="button" onclick="adicionarTopico()">Criar Tópico</button>
+        </form>
+        <ul id="lista-topicos"></ul>
+    </section>
+
+    <section id="mudanca-climatica-detalhes">
+        <h2>Detalhes sobre Mudança Climática</h2>
+        <p>A mudança climática é um fenômeno global que impacta nosso planeta de várias maneiras. Aqui estão alguns detalhes adicionais:</p>
+        <p> Impulsionada principalmente pelas emissões de gases de efeito estufa</p>
+        <p>Causa aumento da temperatura global e derretimento de geleiras</p>
+        <p>Climáticos extremos e ameaças à biodiversidade</p>
+        <p>Conscientização e ação coletiva são cruciais para enfrentar esse desafio global.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Plataforma de Conscientização Ambiental</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
